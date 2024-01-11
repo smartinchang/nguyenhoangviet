@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<?php
+?>
+<html lang="vn">
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+    <h1 align="center">BẢNG ĐIỂM</h1>
+    <hr>
+    <table border=1 cellspacing=0 cellpadding=5 id="myTable" align="center">
+			<tr>
+				<th>ID</th>
+				<th>Họ và tên</th>
+				<th>Tuần 1</th>
+				<th>Tuần 2</th>
+				<th>Tuần 3</th>
+				<th>Trung bình</th>
+			</tr>
+			<tr>
+				<td><input type="text" style="width:25px"></td>
+				<td><input type="text" style="width:200px"></td>
+				<td><input type="text" style="width:50px" id="cell3_1" onchange="avg(1)"></td>
+				<td><input type="text" style="width:50px" id="cell4_1" onchange="avg(1)"></td>
+				<td><input type="text" style="width:50px" id="cell5_1" onchange="avg(1)"></td>
+				<td><input type="text" style="width:80px" id="cell6_1" disabled></td>
+			</tr>
+    </table>
+    <br>
+    <center><button onclick="rowAdd()">New Row</button></center>
+	</body>
+</html>
